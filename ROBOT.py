@@ -1,0 +1,130 @@
+import os,sys
+from V7xStyle import Animation
+
+
+def style () :
+    text = ("""
+\033[1;31m
+ ____   ___  ____   ___ _____           ______   __
+|  _ \\ / _ \| __ ) / _ \\_   _|         / ___\\ \\ / /
+| |_) | | | |  _ \\| | | || |    _____  \___ \\\\ V /
+|  _ <| |_| | |_) | |_| || |   |_____|  ___) || |
+|_| \\_\\\\___/|____/ \\___/ |_|           |____/ |_|
+\033[1;33m
+     _____           ____            _   _
+    |_   _|         / ___|          | \\ | |
+      | |    _____  \\___ \\   _____  |  \\| |
+      | |   |_____|  ___) | |_____| | |\\  |
+      |_|           |____/          |_| \\_|
+
+
+\033[1;34m
+      C7 TEAM / BLACK SHADOW / PROJECT SEGMA
+
+\033[1;32m
+""")
+
+
+    print (text)
+
+
+
+
+def anim (x) :
+    w = Animation
+    w.DL (text = "loading .../ " , width = 40 , t = x )
+
+def up () :
+    os.system ("""
+pkg update
+pkg upgrade
+apt update
+apt upgrade
+pip install --upgrade pip
+pkg install bash
+pkg install php
+pkg install git
+pkg install tor
+
+""")
+
+
+def up2 () :
+    os.system ("""
+
+pkg install figlet
+pkg install cowsay
+pkg install curl
+pkg install tar
+pkg install zip
+pkg install unzip
+pkg install sudo
+pkg install wget
+pkg install wcalc
+pkg install openssl
+pkg install bmon
+
+
+
+""")
+
+def up3 () :
+    os.system ("""
+
+pkg install java
+Pkg install google
+pkg install perl
+pkg install nmap
+pkg install clang
+pkg install macchanger
+pkg install nano
+
+
+""")
+
+def up4 () :
+    os.system ("""
+
+pkg install python2
+pkg install python3
+pkg install ruby
+
+
+""")
+
+
+os.system ("clear")
+anim (0.02)
+os.system ("clear")
+style ()
+print ("")
+print ("[*]  1- for update termux ")
+print ("[*]  2- To download the basics (part 1) ")
+print ("[*]  3- To download the basics (part 2) ")
+print ("[*]  4- To download the basics (part 3) ")
+print ("[*]  5- exit ")
+print ("")
+
+
+df = input (">>>>>  ")
+
+if df == "1" :
+    os.system ("clear")
+    anim (0.01)
+    up ()
+elif df == "2" :
+    os.system ("clear")
+    anim (0.01)
+    up2 ()
+elif df == "3" :
+    os.system ("clear")
+    anim (0.01)
+    up3 ()
+elif df == "4" :
+    os.system ("clear")
+    anim (0.01)
+    up4 ()
+elif df == "5" :
+    anim (0.01)
+    os.system ("clear")
+    sys.exit ()
