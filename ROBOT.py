@@ -92,17 +92,33 @@ pkg install ruby
 
 """)
 
+def metas () :
+    os.system ("""
+
+pkg update
+pkg upgrade
+pkg install unstable-repo
+pkg install metasploit
+
+""")
+
+
+
+
+
+
 
 os.system ("clear")
 anim (0.02)
 os.system ("clear")
 style ()
 print ("")
-print ("[*]  1- for update termux ")
-print ("[*]  2- To download the basics (part 1) ")
-print ("[*]  3- To download the basics (part 2) ")
-print ("[*]  4- To download the basics (part 3) ")
-print ("[*]  5- exit ")
+print ("\033[1;33m[\033[1;34m*\033[1;33m]\033[1;37m 1- for update termux ")
+print ("\033[1;33m[\033[1;34m*\033[1;33m]\033[1;37m 2- To download the basics (part 1) ")
+print ("\033[1;33m[\033[1;34m*\033[1;33m]\033[1;37m 3- To download the basics (part 2) ")
+print ("\033[1;33m[\033[1;34m*\033[1;33m]\033[1;37m 4- To download the basics (part 3) ")
+print ("\033[1;33m[\033[1;34m*\033[1;33m]\033[1;37m 5- To install metasploit ")
+print ("\033[1;33m[\033[1;34m*\033[1;33m]\033[1;37m 6- exit ")
 print ("")
 
 
@@ -125,6 +141,10 @@ elif df == "4" :
     anim (0.01)
     up4 ()
 elif df == "5" :
+    os.system ("clear")
+    anim (0.01)
+    metas ()
+elif df == "6" :
     anim (0.01)
     os.system ("clear")
     sys.exit ()
