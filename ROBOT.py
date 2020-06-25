@@ -107,44 +107,44 @@ pkg install metasploit
 
 
 
+while True :
+    os.system ("clear")
+    anim (0.02)
+    os.system ("clear")
+    style ()
+    print ("")
+    print ("\033[1;33m[\033[1;34m*\033[1;33m]\033[1;37m 1- for update termux ")
+    print ("\033[1;33m[\033[1;34m*\033[1;33m]\033[1;37m 2- To download the basics (part 1) ")
+    print ("\033[1;33m[\033[1;34m*\033[1;33m]\033[1;37m 3- To download the basics (part 2) ")
+    print ("\033[1;33m[\033[1;34m*\033[1;33m]\033[1;37m 4- To download the basics (part 3) ")
+    print ("\033[1;33m[\033[1;34m*\033[1;33m]\033[1;37m 5- To install metasploit ")
+    print ("\033[1;33m[\033[1;34m*\033[1;33m]\033[1;37m 6- exit ")
+    print ("")
 
-os.system ("clear")
-anim (0.02)
-os.system ("clear")
-style ()
-print ("")
-print ("\033[1;33m[\033[1;34m*\033[1;33m]\033[1;37m 1- for update termux ")
-print ("\033[1;33m[\033[1;34m*\033[1;33m]\033[1;37m 2- To download the basics (part 1) ")
-print ("\033[1;33m[\033[1;34m*\033[1;33m]\033[1;37m 3- To download the basics (part 2) ")
-print ("\033[1;33m[\033[1;34m*\033[1;33m]\033[1;37m 4- To download the basics (part 3) ")
-print ("\033[1;33m[\033[1;34m*\033[1;33m]\033[1;37m 5- To install metasploit ")
-print ("\033[1;33m[\033[1;34m*\033[1;33m]\033[1;37m 6- exit ")
-print ("")
 
+    df = input (">>>>>  ")
 
-df = input (">>>>>  ")
-
-if df == "1" :
-    os.system ("clear")
-    anim (0.01)
-    up ()
-elif df == "2" :
-    os.system ("clear")
-    anim (0.01)
-    up2 ()
-elif df == "3" :
-    os.system ("clear")
-    anim (0.01)
-    up3 ()
-elif df == "4" :
-    os.system ("clear")
-    anim (0.01)
-    up4 ()
-elif df == "5" :
-    os.system ("clear")
-    anim (0.01)
-    metas ()
-elif df == "6" :
-    anim (0.01)
-    os.system ("clear")
-    sys.exit ()
+    if df == "1" :
+        os.system ("clear")
+        anim (0.01)
+        up ()
+    elif df == "2" :
+        os.system ("clear")
+        anim (0.01)
+        up2 ()
+    elif df == "3" :
+        os.system ("clear")
+        anim (0.01)
+        up3 ()
+    elif df == "4" :
+        os.system ("clear")
+        anim (0.01)
+        up4 ()
+    elif df == "5" :
+        os.system ("clear")
+        anim (0.01)
+        metas ()
+    elif df == "6" :
+        anim (0.01)
+        os.system ("clear")
+        sys.exit ()
