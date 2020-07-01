@@ -1,5 +1,4 @@
 import os,sys
-from V7xStyle import Animation
 
 
 def style () :
@@ -28,11 +27,6 @@ def style () :
     print (text)
 
 
-
-
-def anim (x) :
-    w = Animation
-    w.DL (text = "loading .../ " , width = 40 , t = x )
 
 def up () :
     os.system ("""
@@ -109,7 +103,7 @@ pkg install metasploit
 
 while True :
     os.system ("clear")
-    anim (0.02)
+    
     os.system ("clear")
     style ()
     print ("")
@@ -126,25 +120,25 @@ while True :
 
     if df == "1" :
         os.system ("clear")
-        anim (0.01)
+        
         up ()
     elif df == "2" :
         os.system ("clear")
-        anim (0.01)
+        
         up2 ()
     elif df == "3" :
         os.system ("clear")
-        anim (0.01)
+      
         up3 ()
     elif df == "4" :
         os.system ("clear")
-        anim (0.01)
+     
         up4 ()
     elif df == "5" :
         os.system ("clear")
-        anim (0.01)
+      
         metas ()
     elif df == "6" :
-        anim (0.01)
+       
         os.system ("clear")
         sys.exit ()
